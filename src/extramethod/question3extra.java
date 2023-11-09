@@ -16,16 +16,17 @@ public class question3extra {
         int oriNum=num;//use variable oriNum to store the original number
         while(num !=0){
            num=num/10;
-           count++;
+           count++; //to find the number of digits in the number
         }
         num=oriNum;//reset num to the original number
+        
         for(int i=0;i < count;i++){
-            int digit=num%10;
+            int digit=num%10;  //to retrieve the digit
             int factorial=1;
             for(int b=1;b <=digit;b++)
-                factorial=factorial*b;
-            sum=factorial+sum;
-            num=num/10;
+                factorial=factorial*b; //find the factorial of the digit
+            sum=factorial+sum;  //to find the sum of factorials
+            num=num/10;  
             
             if(count-1 >i){
                 System.out.print(factorial+" + ");
