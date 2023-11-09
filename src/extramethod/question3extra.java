@@ -14,7 +14,6 @@ public class question3extra {
         int count=0;
         int sum=0;
         int oriNum=num;//use variable oriNum to store the original number
-        int c=oriNum;
         while(num !=0){
            num=num/10;
            count++;
