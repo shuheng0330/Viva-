@@ -9,7 +9,6 @@ public class question4 {
         Scanner input=new Scanner(System.in);
         
         int sumLowerCase=0,sumUpperCase=0,sumSpecial=0,sumDigit=0;
-        boolean length=true;
         
         System.out.print("Enter a string:");
         String password=input.nextLine();
