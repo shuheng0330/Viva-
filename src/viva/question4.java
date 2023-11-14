@@ -27,9 +27,9 @@ public class question4 {
         
         System.out.print("Strength of password:");
         if(sumLowerCase>=1 && sumUpperCase>=1 && sumSpecial>=1 &&password.length() >=8 && sumDigit >=1)
-            System.out.println("Strong");
+            System.out.println("Strong"); //if the password satisfies all the conditions,hence the password is strong
         else if(sumLowerCase>=1 && sumUpperCase>=1 && sumSpecial>=1 && password.length() >=6)
-            System.out.println("Moderate");
+            System.out.println("Moderate"); //if the password satisfies the first three conditions,thus the password is moderate
         else
             System.out.println("Weak");
     }
