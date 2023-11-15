@@ -9,33 +9,18 @@ public class question2extra {
         Scanner input=new Scanner(System.in);
         System.out.print("Enter an integer:");
         int num=input.nextInt();
-        int oriNum=num;
         System.out.print("Reversed integer:");
         
-        
-        int count=0;
-        while(num!=0){
-            num=num/10;
-            count++;
-        }
-        num=oriNum;
-
-        
         if(num <0){
-           System.out.print("-");
-           num=-num;
-        for(int i=count-1;i>=0;i--){
-            System.out.print(num%10);
-            num=num/10;
+           System.out.print("-");//print negative sign to indicate negative integer
+           num=-num; //convert negative integer to positive integer for simple reverse
         }
+           while(num !=0){
+            System.out.print(num%10);//print  last digit
+            num=num/10;              //remove last digit
         }
-        else
-         for(int i=count-1;i>=0;i--){
-            System.out.print(num%10);
-            num=num/10;
-         }
-            
         
+        }
+            
     }
     
-}
